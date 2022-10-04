@@ -23,7 +23,8 @@ public class LeftJoinOperation<K extends Comparable<K>, V1, V2>
                     .map(rightElement -> new JoinedDataRow<>(
                             leftElement.getKey(),
                             leftElement.getValue(),
-                            rightElement.getValue()))
+                            rightElement.getValue())
+                    )
                     .forEach(joinedDataRowCollection::add);
 
             if (joinedDataRowCollection.stream().noneMatch(s -> Objects.equals(s.getKey(), leftElement.getKey()))) {
