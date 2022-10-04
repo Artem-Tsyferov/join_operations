@@ -23,7 +23,8 @@ public class InnerJoinOperation<K extends Comparable<K>, V1, V2>
                             leftElement.getKey(),
                             leftElement.getValue(),
                             rightElement.getValue()
-                    )).forEach(joinedDataRowCollection::add);
+                    ))
+                    .forEach(joinedDataRowCollection::add);
         });
         return joinedDataRowCollection;
     }

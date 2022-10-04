@@ -30,7 +30,8 @@ public class LeftJoinOperation<K extends Comparable<K>, V1, V2>
                 joinedDataRowCollection.add(new JoinedDataRow<>(
                         leftElement.getKey(),
                         leftElement.getValue(),
-                        null));
+                        null
+                ));
             }
         });
         return joinedDataRowCollection;
